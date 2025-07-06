@@ -1,0 +1,152 @@
+.Header {
+  height: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Header-heading > h1 {
+  line-height: 60px;
+}
+
+.Header-navbar {
+  height: 60px;
+}
+
+.Header-navbar-item {
+  float: left;
+  height: 100%;
+}
+
+.Header-navbar-link {
+  display: inline-block;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.Header-navbar-link:hover {
+  background-color: #e6e6fa;
+}
+
+.Header-dropdown-item:hover .Header-dropdown-content {
+  display: block;
+}
+
+.Header-dropdown-content {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: none;
+  width: 100px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Header-dropdown-item {
+  height: 40px;
+}
+
+.Header-dropdown-link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.Header-dropdown-link:hover {
+  background-color: #e6e6fa;
+}
+
+.Header-sidenav-button-container {
+  display: none;
+  width: 60px;
+  height: 60px;
+}
+
+.Header-sidenav-button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 24px;
+}
+
+.Header-sidenav {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  transition-property: right;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.Header-show-sidenav {
+  right: 0;
+}
+
+.Header-close-sidenav {
+  right: -100%;
+}
+
+.Header-sidenav-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.Header-sidenav-item {
+  height: 40px;
+}
+
+.Header-sidenav-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0 25px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.Header-sidenav-link:hover {
+  background-color: #e6e6fa;
+}
+
+.Header-sidenav-dropdown-content {
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: 0.25s;
+}
+
+.Header-sidenav-show-dropdown-content {
+  height: 80px;
+}
+
+.Header-sidenav-close-dropdown-content {
+  height: 0;
+}
+
+.Header-sidenav-dropdown-item {
+  height: 40px;
+}
+
+.Header-sidenav-dropdown-link {
+  display: inline-block;
+  width: 100%;
+  padding: 0 50px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.Header-sidenav-dropdown-link:hover {
+  background-color: #e6e6fa;
+}
+
+@media only screen and (max-width: 768px) {
+  .Header-navbar {
+    display: none;
+  }
+  .Header-sidenav-button-container {
+    display: block;
+  }
+}
