@@ -1,0 +1,172 @@
+.Home-top-banner {
+  position: relative;
+  max-width: 1920px;
+  height: 600px;
+  background-image: url("../../assets/bg-image-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* tb-content = top-banner-content */
+.Home-tb-content {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  width: 600px;
+  padding: 50px;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Home-tb-content > h1 {
+  font-size: 60px;
+  color: #ffa500;
+}
+
+.Home-tb-content > p {
+  font-size: 20px;
+  color: rgb(200,200,200);
+  text-align: justify;
+}
+
+.Home-tb-content > button {
+  display: block;
+  width: 100%;
+  background-color: #ffa500;
+  border: 1px solid #ffa500;
+}
+
+.Home-tb-content > button:hover {
+  background-color: #ff8c00;
+}
+
+/* wcs = why choose us */
+.Home-wcs {
+  width: 100%;
+  height: 650px;
+  background-image: url("../../assets/bg-image-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Home-wcs-header {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+/* fi1 = food image 1 */
+.Home-wcs-fi1 {
+  width: 75px;
+  height: 75px;
+}
+
+.Home-wcs-main {
+  max-width: 1280px;
+  height: calc(600px - 75px);
+}
+
+/* ci1 = chef image 1 */
+.Home-ci1-div {
+  position: relative;
+  width: 350px;
+  height: calc(600px - 75px);
+}
+
+.Home-ci1 {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 12px);
+  transform: translate(-50%, -50%);
+  width: 275px;
+  height: 350px;
+  border-radius: 100px 0;
+  z-index: 1;
+}
+
+.Home-rounded-shape {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 12px);
+  transform: translate(-50%, -50%);
+  width: 275px;
+  height: 350px;
+  border: 2px solid #ffa500;
+  border-radius: 100px 0;
+}
+
+.Home-wcs-content {
+  position: relative;
+  max-width: 550px;
+}
+
+.Home-check-icon {
+  color: #ffa500;
+}
+
+.Home-wcs-content p {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 991px) {
+  .Home-wcs {
+    height: 1000px;
+  }
+  .Home-ci1-div {
+    top: 170px;
+  }
+  .Home-wcs-content {
+    top: 300px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Home-tb-content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+  }
+  .Home-tb-content > h1 {
+    font-size: 50px;
+  }
+  .Home-tb-content > p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Home-tb-content {
+    width: 85%;
+  }
+  .Home-tb-content > h1 {
+    font-size: 28px;
+  }
+  .Home-tb-content > p {
+    font-size: 16px;
+  }
+  .Home-wcs {
+    height: 1100px
+  }
+  .Home-ci1-div {
+    top: 220px
+  }
+  .Home-wcs-content {
+    top: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Home-tb-content {
+    padding: 30px;
+  }
+  .Home-tb-content > h1 {
+    font-size: 24px;
+  }
+  .Home-tb-content > p, .Home-tb-content > button {
+    font-size: 12px;
+  }
+  .Home-wcs-content p {
+    font-size: 12px;
+  }
+}

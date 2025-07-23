@@ -38,6 +38,7 @@
   width: 100px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .Header-dropdown-item {
@@ -79,6 +80,7 @@
   transition-property: right;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
+  z-index: 1;
 }
 
 .Header-show-sidenav {
@@ -86,7 +88,7 @@
 }
 
 .Header-close-sidenav {
-  right: -100%;
+  right: -250px;
 }
 
 .Header-sidenav-close-button {

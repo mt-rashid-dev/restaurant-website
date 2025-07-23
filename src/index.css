@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.color-gray-1 {
+  color: #646464;
+}
+
+.color-gray-2 {
+  color: #969696;
+}

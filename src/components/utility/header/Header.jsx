@@ -27,7 +27,7 @@ const Header = () => {
     <div className="Header">
       <div className="d-flex justify-content-between">
         <div className="Header-heading">
-          <h1 className="fs-2 px-2">Restaurant</h1>
+          <h1 className="fs-2 fw-bold px-2">Restaurant</h1>
         </div>
         <div className="Header-navbar">
           <div className="Header-navbar-item">
@@ -40,7 +40,7 @@ const Header = () => {
             <Link className="Header-navbar-link text-decoration-none text-dark px-2">Reservation</Link>
           </div>
           <div className="Header-navbar-item">
-            <Link className="Header-navbar-link text-decoration-none text-dark px-2">Reviews</Link>
+            <Link className="Header-navbar-link text-decoration-none text-dark px-2">Testimonials</Link>
           </div>
           <div className="Header-navbar-item">
             <Link className="Header-navbar-link text-decoration-none text-dark px-2">About</Link>
@@ -80,7 +80,7 @@ const Header = () => {
           <Link className="Header-sidenav-link text-decoration-none text-dark">Reservation</Link>
         </div>
         <div className="Header-sidenav-item">
-          <Link className="Header-sidenav-link text-decoration-none text-dark">Reviews</Link>
+          <Link className="Header-sidenav-link text-decoration-none text-dark">Testimonials</Link>
         </div>
         <div className="Header-sidenav-item">
           <Link className="Header-sidenav-link text-decoration-none text-dark">About</Link>
@@ -89,7 +89,7 @@ const Header = () => {
           <Link className="Header-sidenav-link text-decoration-none text-dark">Contact</Link>
         </div>
         <div className="Header-sidenav-item Header-sidenav-dropdown-item">
-          <Link className="Header-sidenav-link text-decoration-none text-dark" onClick={toggleSidenavDropdownContent} ><i className="bi bi-person-circle"></i></Link>
+          <Link className="Header-sidenav-link text-decoration-none text-dark" onClick={toggleSidenavDropdownContent}><i className="bi bi-person-circle"></i></Link>
           <div className="Header-sidenav-dropdown-content Header-sidenav-close-dropdown-content" id="Header-sidenav-dropdown-content">
             <div className="Header-sidenav-item">
               <Link className="Header-sidenav-dropdown-link text-decoration-none text-dark">Sign Up</Link>

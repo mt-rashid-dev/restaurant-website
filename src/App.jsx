@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/utility/layout/Layout";
+import Home from "./components/home/Home";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout>
-            <p>This is home page</p>
+            <Home />
           </Layout>}/>
         </Routes>
       </BrowserRouter>
