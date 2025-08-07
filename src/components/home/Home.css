@@ -109,6 +109,39 @@
   text-align: justify;
 }
 
+.Home-menu-content {
+  background-image: url("../../assets/bg-image-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Home-menu-content h1 {
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  border-bottom: 5px solid #ff8c00;
+}
+
+/* mc = menu category */
+.Home-mc {
+  background-color: rgba(30,30,30,0.8);
+  cursor: pointer;
+}
+
+.Home-mc > h4 {
+  color: #ff8c00;
+}
+
+.Home-mc:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.Home-mci {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(24,24,24,0.8);
+}
+
 @media only screen and (max-width: 991px) {
   .Home-wcs {
     height: 1000px;
