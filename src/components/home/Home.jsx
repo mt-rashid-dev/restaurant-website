@@ -1,10 +1,11 @@
 import "./Home.css";
-import foodImage1 from "../../assets/food-image-1.jpg";
+import foodImage1 from "../../assets/food-image-1.png";
 import chefImage1 from "../../assets/chef-image-1.jpg";
-import appetizer from "../../assets/appetizer.png";
+import salad from "../../assets/salad.png";
 import dinner from "../../assets/dinner.png";
-import dessert from "../../assets/dessert.png";
-import coffeePot from "../../assets/coffee-pot.png";
+import iceCream from "../../assets/ice-cream.png";
+import teaCup from "../../assets/tea-cup.png";
+import profileImage1 from "../../assets/profile-image-1.png";
 
 const Home = () => {
   return (
@@ -14,8 +15,24 @@ const Home = () => {
         {/* tb-content = top-banner-content */}
         <div className="Home-tb-content rounded-5">
           <h1>Lorem Ipsum</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti repellendus corporis recusandae vitae voluptas debitis nisi repellat ipsa quibusdam iusto quas earum assumenda odio fugit sunt sapiente, expedita, illum, ut dolores.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti repellendus corporis recusandae vitae voluptas debitis nisi repellat ipsa quibusdam iusto quas earum assumenda.</p>
           <button className="py-2 rounded-pill">Book a Table</button>
+        </div>
+        {/* smic = social media icon container */}
+        <div className="Home-smic">
+          {/* smi = social media icon */}
+          <div className="Home-smi">
+            <i className="bi bi-facebook text-primary"></i>
+          </div>
+          <div className="Home-smi">
+            <i className="bi bi-instagram bg-light rounded-3 px-1"></i>
+          </div>
+          <div className="Home-smi">
+            <i className="bi bi-twitter bg-info text-light rounded-circle px-1"></i>
+          </div>
+          <div className="Home-smi">
+            <i className="bi bi-pinterest text-danger"></i>
+          </div>
         </div>
       </div>
 
@@ -65,33 +82,85 @@ const Home = () => {
             <div className="col-12 col-md-6 col-lg-3">
               {/* mc = menu category */}
               <div className="Home-mc m-2 p-3 rounded-5">
-                {/* mci = menu category icon */}
-                <img src={appetizer} alt="" className="Home-mci d-block mx-auto p-2 rounded-circle"/>
+                {/* mci = menu category icon div */}
+                <div className="Home-mcid p-2 mx-auto rounded-circle text-center">
+                  <img src={salad} alt="" className="w-75"/>
+                </div>
                 <h4 className="fw-bold mt-3 text-center">Appetizers</h4>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3">
               <div className="Home-mc m-2 p-3 rounded-5">
-                <img src={dinner} alt="" className="Home-mci d-block mx-auto p-2 rounded-circle"/>
+                <div className="Home-mcid p-2 mx-auto rounded-circle text-center">
+                  <img src={dinner} alt="" className="w-75"/>
+                </div>
                 <h4 className="fw-bold mt-3 text-center">Entrees</h4>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3">
               <div className="Home-mc m-2 p-3 rounded-5">
-                <img src={dessert} alt="" className="Home-mci d-block mx-auto p-2 rounded-circle"/>
+                <div className="Home-mcid p-2 mx-auto rounded-circle text-center">
+                  <img src={iceCream} alt="" className="w-25"/>
+                </div>
                 <h4 className="fw-bold mt-3 text-center">Desserts</h4>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-3">
               <div className="Home-mc m-2 p-3 rounded-5">
-                <img src={coffeePot} alt="" className="Home-mci d-block mx-auto p-2 rounded-circle"/>
+                <div className="Home-mcid p-2 mx-auto rounded-circle text-center">
+                  <img src={teaCup} alt="" className="w-50"/>
+                </div>
                 <h4 className="fw-bold mt-3 text-center">Tea & Coffee</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div style={{ height: "400px", backgroundColor: "yellow" }}></div>
+      <div className="Home-testimonials container py-5">
+        <h1 className="text-center">Testimonials</h1>
+        <p className="text-center mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div className="row">
+          <div className="col-12 col-lg-6 col-xl-3 p-2">
+            {/* tc = testimonial card */}
+            <div className="Home-tc p-4 rounded-5 position-relative">
+              <img src={profileImage1} alt=""/>
+              <h5 className="fw-bold text-center py-2">User One</h5>
+              <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta quidem dolores nulla qui blanditiis sed?</p>
+              <i className="bi bi-quote position-absolute top-0 left-0 fs-1 fw-bold"></i>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 col-xl-3 p-2">
+            {/* tc = testimonial card */}
+            <div className="Home-tc p-4 rounded-5 position-relative">
+              <img src={profileImage1} alt=""/>
+              <h5 className="fw-bold text-center py-2">User One</h5>
+              <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta quidem dolores nulla qui blanditiis sed?</p>
+              <i className="bi bi-quote position-absolute top-0 left-0 fs-1 fw-bold"></i>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 col-xl-3 p-2">
+            {/* tc = testimonial card */}
+            <div className="Home-tc p-4 rounded-5 position-relative">
+              <img src={profileImage1} alt=""/>
+              <h5 className="fw-bold text-center py-2">User One</h5>
+              <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta quidem dolores nulla qui blanditiis sed?</p>
+              <i className="bi bi-quote position-absolute top-0 left-0 fs-1 fw-bold"></i>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 col-xl-3 p-2">
+            {/* tc = testimonial card */}
+            <div className="Home-tc p-4 rounded-5 position-relative">
+              <img src={profileImage1} alt=""/>
+              <h5 className="fw-bold text-center py-2">User One</h5>
+              <p className="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta quidem dolores nulla qui blanditiis sed?</p>
+              <i className="bi bi-quote position-absolute top-0 left-0 fs-1 fw-bold"></i>
+            </div>
+          </div>
+        </div>
+        <div className="text-center mt-5">
+          <button className="btn btn-outline-secondary">Read More</button>
+        </div>
+      </div>
     </div>
   );
 };

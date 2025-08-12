@@ -41,11 +41,37 @@
   background-color: #ff8c00;
 }
 
+/* smic = social media icon container */
+.Home-smic {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 320px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* smi = social media icon */
+.Home-smi {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.Home-smi:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
 /* wcs = why choose us */
 .Home-wcs {
   width: 100%;
   height: 650px;
-  background-image: url("../../assets/bg-image-2.jpg");
+  background-image: url("../../assets/bg-image-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,7 +150,8 @@
 
 /* mc = menu category */
 .Home-mc {
-  background-color: rgba(30,30,30,0.8);
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0 4px 8px 0 rgba(255,165,0,0.2), 0 6px 20px 0 rgba(255,165,0,0.19);
   cursor: pointer;
 }
 
@@ -133,16 +160,44 @@
 }
 
 .Home-mc:hover {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(64,64,64,0.9);
 }
 
-.Home-mci {
+/* mcid = menu category icon div */
+.Home-mcid {
   width: 150px;
   height: 150px;
+  line-height: 120px;
+  vertical-align: middle;
   background-color: rgba(24,24,24,0.8);
 }
 
+/* tc = testimonial card */
+.Home-tc {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.Home-tc > img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
 @media only screen and (max-width: 991px) {
+  .Home-tb-content {
+    left: calc(50% - 40px);
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 50px 25px;
+  }
+  .Home-tb-content > h1 {
+    font-size: 36px;
+  }
+  .Home-tb-content > p {
+    font-size: 18px;
+  }
   .Home-wcs {
     height: 1000px;
   }
@@ -154,29 +209,15 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .Home-tb-content {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-  }
-  .Home-tb-content > h1 {
-    font-size: 50px;
-  }
-  .Home-tb-content > p {
-    font-size: 18px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .Home-tb-content {
-    width: 85%;
+    width: 60%;
   }
   .Home-tb-content > h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .Home-tb-content > p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .Home-wcs {
     height: 1100px
@@ -190,14 +231,12 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .Home-tb-content {
-    padding: 30px;
-  }
+
   .Home-tb-content > h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .Home-tb-content > p, .Home-tb-content > button {
-    font-size: 12px;
+    font-size: 10px;
   }
   .Home-wcs-content p {
     font-size: 12px;
