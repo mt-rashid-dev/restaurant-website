@@ -116,6 +116,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Testimonials Section */}
       <div className="Home-testimonials container py-5">
         <h1 className="text-center">Testimonials</h1>
         <p className="text-center mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -159,6 +161,64 @@ const Home = () => {
         </div>
         <div className="text-center mt-5">
           <button className="btn btn-outline-secondary">Read More</button>
+        </div>
+      </div>
+
+      {/* About Us Section */}
+      <div className="Home-about container-fluid">
+        <div className="row">
+          {/* alc = about left column */}
+          <div className="Home-alc col-12 col-lg-6 p-0">
+            {/* atllc = about top layer of left column */}
+            <div className="Home-atllc">
+              <button className="Home-ab">About Us</button>
+            </div>
+          </div>
+          {/* arc = about right column */}
+          <div className="Home-arc col-12 col-lg-6 p-0">
+            {/* atlrc = about top layer of right column */}
+            <div className="Home-atlrc h-100 pt-5 position-relative">
+              <h5 className="pb-1 fw-bold mx-5">Let's Discover Our History</h5>
+              <p className="mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatibus? Rerum architecto ducimus at nisi sit eius accusamus reiciendis illum neque doloremque unde, eum quidem incidunt est mollitia enim saepe distinctio, nulla quo id sequi impedit!</p>
+              <div className="container-fluid">
+                <div className="row mt-5">
+                  <div className="col-12 col-sm-4 mb-3">
+                    {/* acs = about circle shape */}
+                    <div className="Home-acs border border-3 border-light rounded-circle mx-auto">
+                      <div className="d-flex h-100 justify-content-center align-items-center">
+                        <span className="fs-1">10+</span>
+                      </div>
+                    </div>
+                    <h5 className="text-center mt-3">Years of<br/>Experience</h5>
+                  </div>
+                  <div className="col-12 col-sm-4 mb-3">
+                    {/* acs = about circle shape */}
+                    <div className="Home-acs border border-3 border-light rounded-circle mx-auto">
+                      <div className="d-flex h-100 justify-content-center align-items-center">
+                        <span className="fs-1">1K+</span>
+                      </div>
+                    </div>
+                    <h5 className="text-center mt-3">Served Customers<br/>Daily</h5>
+                  </div>
+                  <div className="col-12 col-sm-4 mb-3">
+                    {/* acs = about circle shape */}
+                    <div className="Home-acs border border-3 border-light rounded-circle mx-auto">
+                      <div className="d-flex h-100 justify-content-center align-items-center">
+                        <span className="fs-1">50+</span>
+                      </div>
+                    </div>
+                    <h5 className="text-center mt-3">Number of<br/>Dishes</h5>
+                  </div>
+                </div>
+              </div>
+              <div className="d-none d-lg-block text-center position-absolute bottom-0 w-100 py-5">
+                <button className="btn btn-outline-light rounded-0">Read More</button>
+              </div>
+              <div className="d-lg-none text-center w-100 py-5">
+                <button className="btn btn-outline-light rounded-0">Read More</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

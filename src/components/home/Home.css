@@ -185,6 +185,65 @@
   border-radius: 50%;
 }
 
+/* Style About Us Section */
+/* alc = about left column */
+.Home-alc {
+  height: 550px;
+  background-image: url("../../assets/bg-image-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* atllc = about top layer of left column */
+.Home-atllc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,128,128,0.5);
+}
+
+/* ab = about button */
+.Home-ab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  padding: 10px 25px;
+  background-color: rgba(0,128,128,0.5);
+  color: white;
+  border: 2px solid white;
+}
+
+/* arc = about right column */
+.Home-arc {
+  height: 550px;
+}
+
+/* atlrc = about top layer right column */
+.Home-atlrc {
+  background-color: rgb(0,128,128);
+  color: #fff;
+}
+
+.Home-atlrc > h5 {
+  width: fit-content;
+  border-bottom: 2px solid #ffa500;
+}
+
+/* acs = about circle shape */
+.Home-acs {
+  width: 120px;
+  height: 120px;
+}
+
+@media only screen and (max-width: 1218px) {
+  .Home-alc, .Home-arc {
+    height: 650px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .Home-tb-content {
     left: calc(50% - 40px);
@@ -206,6 +265,9 @@
   }
   .Home-wcs-content {
     top: 300px;
+  }
+  .Home-arc {
+    height: fit-content;
   }
 }
 
