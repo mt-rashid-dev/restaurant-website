@@ -1,3 +1,4 @@
+/* Style Top Banner Section */
 .Home-top-banner {
   position: relative;
   max-width: 1920px;
@@ -67,6 +68,7 @@
   background-color: rgba(255,255,255,0.2);
 }
 
+/* Style "Why Choose Us" Section */
 /* wcs = why choose us */
 .Home-wcs {
   width: 100%;
@@ -96,7 +98,7 @@
 /* ci1 = chef image 1 */
 .Home-ci1-div {
   position: relative;
-  width: 350px;
+  max-width: 350px;
   height: calc(600px - 75px);
 }
 
@@ -135,6 +137,7 @@
   text-align: justify;
 }
 
+/* Style Menu Section */
 .Home-menu-content {
   background-image: url("../../assets/bg-image-3.jpg");
   background-size: cover;
@@ -172,6 +175,7 @@
   background-color: rgba(24,24,24,0.8);
 }
 
+/* Style Testimonials Section */
 /* tc = testimonial card */
 .Home-tc {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -214,6 +218,13 @@
   background-color: rgba(0,128,128,0.5);
   color: white;
   border: 2px solid white;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.Home-ab:hover {
+  background-color: #fff;
+  color: rgb(0,128,128);
 }
 
 /* arc = about right column */
@@ -293,12 +304,15 @@
 }
 
 @media only screen and (max-width: 400px) {
-
   .Home-tb-content > h1 {
     font-size: 20px;
   }
   .Home-tb-content > p, .Home-tb-content > button {
     font-size: 10px;
+  }
+  .Home-ci1, .Home-rounded-shape {
+    width: 200px;
+    height: 300px;
   }
   .Home-wcs-content p {
     font-size: 12px;

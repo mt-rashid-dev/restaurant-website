@@ -10,7 +10,7 @@ import profileImage1 from "../../assets/profile-image-1.png";
 const Home = () => {
   return (
     <div>
-      {/* Top Banner */}
+      {/* "Top Banner" Section */}
       <div className="Home-top-banner">
         {/* tb-content = top-banner-content */}
         <div className="Home-tb-content rounded-5">
@@ -31,11 +31,12 @@ const Home = () => {
             <i className="bi bi-twitter bg-info text-light rounded-circle px-1"></i>
           </div>
           <div className="Home-smi">
-            <i className="bi bi-pinterest text-danger"></i>
+            <i className="bi bi-pinterest" style={{ color: "red" }}></i>
           </div>
         </div>
       </div>
 
+      {/* "Why Choose Us" Section */}
       {/* wcs = why choose us */}
       <div className="Home-wcs">
         <div className="Home-wcs-header px-2 py-3">
@@ -74,7 +75,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Menu Content */}
+      {/* Menu Section */}
       <div className="Home-menu-content py-5">
         <div className="container">
           <h1 className="text-center fw-bold mb-3 py-2 rounded-pill">Menu</h1>
@@ -118,7 +119,7 @@ const Home = () => {
       </div>
 
       {/* Testimonials Section */}
-      <div className="Home-testimonials container py-5">
+      <div className="container py-5">
         <h1 className="text-center">Testimonials</h1>
         <p className="text-center mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         <div className="row">
@@ -164,7 +165,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* About Us Section */}
+      {/* "About Us" Section */}
       <div className="Home-about container-fluid">
         <div className="row">
           {/* alc = about left column */}
@@ -219,6 +220,15 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* "Subscribe to Our Newsletter" Section */}
+      <div className="container py-5">
+        <h1 className="mb-3">Subcribe to Our Newletter</h1>
+        <div className="input-group mb-3">
+          <input type="text" className="form-control border border-dark fs-3 rounded-0" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2"/>
+          <button className="btn btn-dark fs-3 rounded-0" type="button" id="button-addon2">Submit</button>
         </div>
       </div>
     </div>
