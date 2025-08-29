@@ -31,10 +31,10 @@ const Header = () => {
         </div>
         <div className="Header-navbar">
           <div className="Header-navbar-item">
-            <Link className="Header-navbar-link text-decoration-none text-dark px-2">Home</Link>
+            <Link className="Header-navbar-link text-decoration-none text-dark px-2" to="/home">Home</Link>
           </div>
           <div className="Header-navbar-item">
-            <Link className="Header-navbar-link text-decoration-none text-dark px-2">Menu</Link>
+            <Link className="Header-navbar-link text-decoration-none text-dark px-2" to="/menu">Menu</Link>
           </div>
           <div className="Header-navbar-item">
             <Link className="Header-navbar-link text-decoration-none text-dark px-2">Reservation</Link>
@@ -71,10 +71,10 @@ const Header = () => {
       <div className="Header-sidenav Header-close-sidenav" id="Header-sidenav">
         <span className="Header-sidenav-close-button" onClick={closeSidenav}><i className="bi bi-arrow-right-square"></i></span>
         <div className="Header-sidenav-item mt-5">
-          <Link className="Header-sidenav-link text-decoration-none text-dark">Home</Link>
+          <Link className="Header-sidenav-link text-decoration-none text-dark" to="/home">Home</Link>
         </div>
         <div className="Header-sidenav-item">
-          <Link className="Header-sidenav-link text-decoration-none text-dark">Menu</Link>
+          <Link className="Header-sidenav-link text-decoration-none text-dark" to="/menu">Menu</Link>
         </div>
         <div className="Header-sidenav-item">
           <Link className="Header-sidenav-link text-decoration-none text-dark">Reservation</Link>

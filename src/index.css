@@ -8,6 +8,10 @@
   color: #646464;
 }
 
-.color-gray-2 {
-  color: #969696;
+.color-orange-1 {
+  color: #ffa500;
+}
+
+.bg-orange-1 {
+  background-color: #e67e00;
 }

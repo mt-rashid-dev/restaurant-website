@@ -5,6 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/utility/layout/Layout";
 import Home from "./components/home/Home";
+import Menu from "./components/menu/Menu";
 
 const App = () => {
   return (
@@ -13,6 +14,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout>
             <Home />
+          </Layout>}/>
+          <Route path="/home" element={<Layout>
+            <Home />
+          </Layout>}/>
+          <Route path="/menu" element={<Layout>
+            <Menu />
           </Layout>}/>
         </Routes>
       </BrowserRouter>
