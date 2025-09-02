@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/utility/layout/Layout";
 import Home from "./components/home/Home";
 import Menu from "./components/menu/Menu";
+import Reservation from "./components/reservation/Reservation";
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
           </Layout>}/>
           <Route path="/menu" element={<Layout>
             <Menu />
+          </Layout>}/>
+          <Route path="/reservation" element={<Layout>
+            <Reservation />
           </Layout>}/>
         </Routes>
       </BrowserRouter>

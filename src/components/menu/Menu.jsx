@@ -1,4 +1,3 @@
-import "./Menu.css";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { appetizers } from "../../foodItems";
@@ -32,9 +31,9 @@ const Menu = () => {
     <div>
       {/* Top Banner Section */}
       {/* tb = top banner */}
-      <div className="Menu-tb">
+      <div className="component-tb">
         {/* tbtl = top banner top layer */}
-        <div className="Menu-tbtl">
+        <div className="component-tbtl">
           <div className="container h-100 d-flex align-items-center">
             <div className="text-light">
               <h1 className="color-orange-1">Delicious Dishes</h1>
