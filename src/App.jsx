@@ -7,6 +7,7 @@ import Layout from "./components/utility/layout/Layout";
 import Home from "./components/home/Home";
 import Menu from "./components/menu/Menu";
 import Reservation from "./components/reservation/Reservation";
+import Testimonials from "./components/testimonials/Testmonials";
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
           </Layout>}/>
           <Route path="/reservation" element={<Layout>
             <Reservation />
+          </Layout>}/>
+          <Route path="/testimonials" element={<Layout>
+            <Testimonials />
           </Layout>}/>
         </Routes>
       </BrowserRouter>

@@ -37,10 +37,10 @@ const Header = () => {
             <Link className="Header-navbar-link text-decoration-none text-dark px-2" to="/menu">Menu</Link>
           </div>
           <div className="Header-navbar-item">
-            <Link className="Header-navbar-link text-decoration-none text-dark px-2">Reservation</Link>
+            <Link className="Header-navbar-link text-decoration-none text-dark px-2" to="/reservation">Reservation</Link>
           </div>
           <div className="Header-navbar-item">
-            <Link className="Header-navbar-link text-decoration-none text-dark px-2">Testimonials</Link>
+            <Link className="Header-navbar-link text-decoration-none text-dark px-2" to="/testimonials">Testimonials</Link>
           </div>
           <div className="Header-navbar-item">
             <Link className="Header-navbar-link text-decoration-none text-dark px-2">About</Link>
@@ -77,10 +77,10 @@ const Header = () => {
           <Link className="Header-sidenav-link text-decoration-none text-dark" to="/menu">Menu</Link>
         </div>
         <div className="Header-sidenav-item">
-          <Link className="Header-sidenav-link text-decoration-none text-dark">Reservation</Link>
+          <Link className="Header-sidenav-link text-decoration-none text-dark" to="/reservation">Reservation</Link>
         </div>
         <div className="Header-sidenav-item">
-          <Link className="Header-sidenav-link text-decoration-none text-dark">Testimonials</Link>
+          <Link className="Header-sidenav-link text-decoration-none text-dark" to="/testimonials">Testimonials</Link>
         </div>
         <div className="Header-sidenav-item">
           <Link className="Header-sidenav-link text-decoration-none text-dark">About</Link>
