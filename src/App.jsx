@@ -8,6 +8,7 @@ import Home from "./components/home/Home";
 import Menu from "./components/menu/Menu";
 import Reservation from "./components/reservation/Reservation";
 import Testimonials from "./components/testimonials/Testmonials";
+import About from "./components/about/About";
 
 const App = () => {
   return (
@@ -15,19 +16,22 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout>
-            <Home />
+            <Home/>
           </Layout>}/>
           <Route path="/home" element={<Layout>
-            <Home />
+            <Home/>
           </Layout>}/>
           <Route path="/menu" element={<Layout>
-            <Menu />
+            <Menu/>
           </Layout>}/>
           <Route path="/reservation" element={<Layout>
-            <Reservation />
+            <Reservation/>
           </Layout>}/>
           <Route path="/testimonials" element={<Layout>
-            <Testimonials />
+            <Testimonials/>
+          </Layout>}/>
+          <Route path="/about" element={<Layout>
+            <About/>
           </Layout>}/>
         </Routes>
       </BrowserRouter>

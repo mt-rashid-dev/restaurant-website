@@ -1,0 +1,12 @@
+.About-acs {
+  width: 120px;
+  height: 120px;
+}
+
+.About-dishes {
+  background-color: #f5deb3;
+}
+
+.About-chefs > img {
+  width: 250px;
+}
